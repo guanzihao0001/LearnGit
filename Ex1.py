@@ -24,6 +24,8 @@ def fib1(k):
             f2=f
         return f
 
-print(fib1(10))
-
+def fib2(k):
+    if k==1 or k==2:return 1
+    else:
+        return fib2(k-1)+fib2(k-2)
 
