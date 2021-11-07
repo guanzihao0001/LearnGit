@@ -29,3 +29,23 @@ def fib2(k):
     else:
         return fib2(k-1)+fib2(k-2)
 
+def fib_list(n):
+    sum=[]
+    for i in range(n):
+        sum.append(fib1(i+1))
+    return sum
+
+def expo1(k):
+    sum=1
+    for i in range(k):
+        sum=sum+1/fact1(i+1)
+    return sum
+
+def expo2(k):
+    cur=1
+    sum=1
+    for i in range(k):
+        cur=cur/(i+1)
+        sum=sum+cur
+    return sum
+
